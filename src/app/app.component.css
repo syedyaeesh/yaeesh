@@ -63,6 +63,7 @@ p {
 /*Navbar*/
 
 
+
 /*Navbar End*/
 
 
@@ -258,7 +259,7 @@ p {
 
 /*My Skills */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 756px) {
   .skills-sec {
     background-image: url('../assets/images/code.jpeg');
   }
@@ -272,9 +273,10 @@ p {
   line-height: 1.6;
   background-image:
   url(../assets/images/code.jpeg);
-  background-size: 100%;
+  height: 80vh;
+  width: 100vw;
+  background-size: 93%;
   background-repeat: no-repeat;
-  padding: 5%;
 }
 
 
@@ -289,9 +291,10 @@ ul {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 756px) {
   .skills li {
-    margin: 40px 0;
+    justify-content: center;
+    margin: 10px 0;
    font-size: 16px;
    font-family: 'Montserrat' ;
   }
