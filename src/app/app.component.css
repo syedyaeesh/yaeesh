@@ -79,9 +79,8 @@ p {
 .header {
   background-image: url(../assets/images/header.jpeg);
   background-size: 100%;
-  background-attachment: fixed;
   height: 100vh;
-  width: 100vw;
+  width: 97vw;
   position: relative;
   display: inline-block;
   background-repeat: no-repeat;
@@ -258,134 +257,76 @@ p {
 
 
 /*My Skills */
-
-@media screen and (max-width: 756px) {
-  .skills-sec {
-    background-image: url('../assets/images/code.jpeg');
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
   }
 }
 
-
-
-
-.skills-sec {
-  justify-content: center;
-  line-height: 1.6;
-  background-image:
-  url(../assets/images/code.jpeg);
-  height: 80vh;
-  width: 100vw;
-  background-size: 93%;
-  background-repeat: no-repeat;
-}
-
-
-ul {
-  list-style: none;
-}
-
-.skills {
-  width: 500px;
-  margin: 60px auto;
-  color: #dde1e7;
-}
-
-
-@media screen and (max-width: 756px) {
-  .skills li {
-    justify-content: center;
-    margin: 10px 0;
-   font-size: 16px;
-   font-family: 'Montserrat' ;
-  }
-}
-
-
-
-.skills li {
-  margin: 10px 0;
-  font-size: 16px;
-  font-family: 'Montserrat' ;
-}
-
-
-
-.bar {
-  margin-top: 12px;
-  background-color: #000000;
-  display: block;
-  height: 10px;
-  width: 400px;
-  border: 4px solid rgba(0,0,0,0,.6);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 6px #dde1e7;
-}
-
-
-.bar span {
-  height: 10px;
-  float: left;
+.bar{
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
   background-color: #dde1e7;
+  padding: 6px;
+  border-radius: 24px;
+  margin-bottom: 2%;
+  font-size: 8px;
+  color: #dde1e7;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  font-family: 'Montserrat';
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #32a3b1;
+  display: inline-block;
+  padding: 7px 0 7px 14px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
 }
 
-.html {
-  width: 90%;
-  animation: html 2s;
+.bar.front::before{
+  background-color: #32a3b1;
+}
+.bar.back::before{
+  background-color: #32a3b1;
 }
 
-.css {
-  width: 65%;
-  animation: css 2s;
+.bar.learning::before{
+  width: calc(20% - 10px);
+}
+.bar.basic::before{
+  width: calc(40% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(60% - 10px);
+}
+.bar.advanced::before{
+  width: calc(80% - 10px);
+}
+.bar.expert::before{
+  width: calc(100% - 10px);
 }
 
-.bootstrap {
-  width: 70%;
-  animation: bootstrap 2s;
-}
-
-.angular {
-  width: 85%;
-  animation: angular 2s;
-}
-
-@keyframes html {
-  0% {
-    width: 0%
-  }
-  100% {
-    width: 90%;
-  }
-}
-
-@keyframes css {
-  0% {
-    width: 0%
-  }
-  100% {
-    width: 65%;
-  }
-}
-
-
-@keyframes bootstrap {
-  0% {
-    width: 0%
-  }
-  100% {
-    width: 70%;
-  }
-}
-
-
-@keyframes angular {
-  0% {
-    width: 0%
-  }
-  100% {
-    width: 85%;
-  }
-}
 
 /*My Skills end*/
 
@@ -468,7 +409,8 @@ ul {
 @media (max-width: 768px) { /*breakpoint*/
   .title {
     flex-direction: column;
-    width: auto;
+    width: 33%;
+
   }
 }
 .wrap
