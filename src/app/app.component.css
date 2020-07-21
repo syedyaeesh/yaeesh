@@ -63,65 +63,6 @@ p {
 /*Navbar*/
 
 
-
-.menu {
-  font-family: 'Montserrat';
-  font-weight: 700;
-  background: #dde1e7;
-  width: 180px;
-  height: 100%;
-  padding-left: 50px;
-  position: fixed;
-  z-index: 100;
-  -webkit-box-shadow: -3px 0px 5px 0px rgba(46, 46, 46);
-  box-shadow: -3px 0px 5px 0px rgba(46, 46, 46);
-  right: -130px;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  color: #3a3a3a;
-}
-.menu:hover, .menu:focus {
-  transform: translate3d(-130px, 0, 0);
-  animation-timing-function: 1s ease-in;
-}
-.menu .title {
-  top: 50%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  transform: rotate(270deg);
-  left: -16px;
-  text-align: justify;
-  font-weight: 800;
-  font-size: 24px;
-}
-.menu .nav {
-  position: absolute;
-  top: 56%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  font-weight: 500;
-  text-transform: uppercase;
-}
-.menu .nav li {
-  padding-bottom: 44px;
-  list-style-type: none;
-}
-.menu .nav li a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-}
-.menu .nav li a:hover {
-  color: #9c9c9c;
-}
-
-
 /*Navbar End*/
 
 
