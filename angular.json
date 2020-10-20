@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "yaeesh"
+    }
+  },
+  "defaultProject": "yaeesh",
+  "cli": {
+    "analytics": "6922f1be-098f-4c1f-bb19-e17e4d5dec9e"
+  }
 }
